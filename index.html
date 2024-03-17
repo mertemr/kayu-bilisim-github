@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Background Color</title>
+    <script>
+        function changeBackgroundColor() {
+            var color = document.getElementById("colorInput").value;
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    <h1>My favorite color is:</h1>
+    <input type="text" id="colorInput" placeholder="Enter a color">
+    <button onclick="changeBackgroundColor()">Change</button>
+</body>
+</html>
