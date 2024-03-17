@@ -5,12 +5,16 @@
     <script>
         function changeBackgroundColor() {
             var color = document.getElementById("colorInput").value;
+            var name = document.getElementById("nameInput").value;
             document.body.style.backgroundColor = color;
+            document.getElementById("nameHeader").innerText = name + "'s favorite color is:";
         }
     </script>
 </head>
 <body style="text-align: center;">
-    <h1>My favorite color is:</h1>
+    <h1 id="nameHeader">My favorite color is:</h1>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <br>
     <input type="text" id="colorInput" placeholder="Enter a color">
     <button onclick="changeBackgroundColor()">Change</button>
 </body>
