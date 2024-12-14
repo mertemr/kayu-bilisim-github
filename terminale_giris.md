@@ -92,3 +92,34 @@ Komutlar için detaylı açıklamaları içeren kılavuzu açar. Örnek:
 
 ### 8. **`history`**  
 Daha önce çalıştırdığınız komutların bir listesini gösterir.
+
+### 9\. **`wget`** (_Web Get_)
+
+Bir web sitesinden dosya indirmenizi sağlayan bir komuttur. Özellikle dosya indirme işlemlerinde kullanılır.  
+Örnek:
+
+-   `wget https://example.com/dosya.zip` → "dosya.zip" adlı dosyayı belirtilen URL'den indirir.  
+    **Not:** Bazı sitelerde indirme işlemi için internet erişim izni gerekebilir.
+
+### 10\. **`convert`** (_ImageMagick_)
+
+Görselleri farklı formatlara dönüştürmek veya boyutlandırmak için kullanılan bir komuttur.  
+Örnekler:
+
+-   `convert dosya.png dosya.jpg` → "dosya.png" görselini "dosya.jpg" olarak dönüştürür.
+-   `convert -resize 50% orijinal.jpg yeni.jpg` → Görselin boyutunu %50 küçültüp "yeni.jpg" olarak kaydeder.  
+    **Not:** Bu komut, sistemde _ImageMagick_ yüklü olduğunda çalışır.
+
+### 11\. **`htop`**
+
+Sistemin donanım ve işlem kaynaklarını gerçek zamanlı olarak izlemek için kullanılan bir araçtır. _htop_, _top_ komutunun daha kullanıcı dostu ve görselli bir alternatifidir.
+
+-   `htop` → CPU, RAM, işlemler gibi sistem bilgilerini detaylı ve renkli bir arayüzde gösterir.  
+    **Not:** Bu komutu çalıştırmadan önce `sudo apt install htop` ile kurulum yapmanız gerekebilir.
+
+### 12\. **`btop`** (_Better Top_)
+
+_htop_ komutunun daha modern ve detaylı bir sürümüdür. Sistem kaynaklarını grafiksel bir şekilde izlemek için kullanılır.
+
+-   `btop` → İşlemci, bellek, disk, ağ kullanımı ve işlemleri görselli bir arayüzde gösterir.  
+    **Not:** _btop_ modern sistemlerde tercih edilen bir alternatiftir ve kurulumu için `sudo apt install btop` komutunu kullanabilirsiniz.
